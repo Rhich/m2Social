@@ -1,0 +1,17 @@
+
+<p>les posts de {{user.firstName}}</p>
+
+<mat-card *ngFor="let posts of listOfPosts ">
+
+    <mat-card-header>
+      {{posts.userId}}
+    </mat-card-header>
+    <mat-card-content>
+      {{posts.content}}
+    </mat-card-content>
+
+</mat-card>
+<!--<a *ngFor="let posts of listOfPosts "><mat-list-item>{{posts.content}}</mat-list-item>
+  <mat-list-item>{{posts.id}}</mat-list-item>
+  <mat-list-item>{{posts.img}}</mat-list-item></a>-->
+
